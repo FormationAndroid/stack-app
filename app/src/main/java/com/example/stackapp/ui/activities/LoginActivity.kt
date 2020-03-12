@@ -14,10 +14,10 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         btnConnect.setOnClickListener {
-            if (editPassword.text.toString() == "password")
+            //if (editPassword.text.toString() == "password")
                 startActivity(Intent(applicationContext, MainActivity::class.java))
-            else
-                toast("Mot de passe invalide")
+           // else
+           //     toast("Mot de passe invalide")
         }
 
     }

@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Special application theme. -->
+    <style name="SpecialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#2196F3</item>
+        <item name="colorAccent">#FF0A0A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#000</item>
+        <item name="android:switchStyle">@style/MySwitchStyleDarkMode</item>
+    </style>
+
+    <style name="MySwitchStyleDarkMode" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>
