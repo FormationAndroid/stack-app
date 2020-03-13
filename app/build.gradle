@@ -6,6 +6,15 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+
     defaultConfig {
         applicationId "com.example.stackapp"
         minSdkVersion 22
@@ -36,8 +45,16 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-
     implementation 'com.chibatching.kotpref:kotpref:2.10.0'
     implementation 'com.chibatching.kotpref:initializer:2.10.0'
+
+    def retrofitVersion = "2.7.2"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation("com.squareup.retrofit2:converter-moshi:$retrofitVersion")
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
 
 }
