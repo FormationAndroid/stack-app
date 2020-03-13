@@ -9,7 +9,7 @@ object ApiManager {
 
     fun getQuestions(success: (questionsList : List<Item>) -> Unit, fail: (message : String) -> Unit){
 
-        apiClient.getQuestions().enqueue(object : retrofit2.Callback<Questions>{
+        apiClient.getQuestions(tagged = "android;kotlin").enqueue(object : retrofit2.Callback<Questions>{
 
             override fun onResponse(call: Call<Questions>, response: Response<Questions>) {
                 if (response.isSuccessful)
